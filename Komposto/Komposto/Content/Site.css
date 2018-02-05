@@ -1,7 +1,7 @@
 ﻿body {
     padding-bottom: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    overflow-x:hidden;
+    /*overflow-x:hidden;*/
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -25,6 +25,7 @@ textarea {
     max-width: 280px;
 }
 
+/* Override bootstrap styles */
 .navbar {
     padding: 15px;
     border-bottom: 2px solid rgb(4, 155, 25);  
@@ -69,6 +70,10 @@ textarea {
     display: block;
 }
 
+.dropdown-menu > a {
+    color: #5ea302;
+}
+
  .dropdown-menu > a:hover {
     color: rgb(0, 92, 13);
 }
@@ -78,9 +83,28 @@ textarea {
      background-color: #97c45b;
  }
 
+/* custom styles */
+header.tomato-plant {
+    background-image: url(../Content/images/tomato-4.jpg);
+    background-position: center center;   
+    background-size: cover;
+    padding-top: 20rem;
+    padding-bottom: calc(10rem - 56px);
+    width: auto;
+}
+
+@media (min-width:992px) {
+    header.tomato-plant {
+        height: 100vh;
+        min-height: 650px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
 blockquote.large {
     font-size: 36px;
     font-weight: 700;
     line-height: 1.1em;
-    color: #fff
+    color: #fff;
 }
