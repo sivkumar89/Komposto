@@ -1,0 +1,78 @@
+﻿body {
+    padding-bottom: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    overflow-x:hidden;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-top: 90px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.navbar {
+    padding: 15px;
+    border-bottom: 2px solid rgb(4, 155, 25);  
+    background-color: #fff;  
+    box-shadow: 0 3px 10px rgb(0, 159, 22) !important;
+}
+
+.nav-item > a{
+    color: rgb(53, 53, 53);
+    font-size: 18px;    
+    font-weight:600
+}
+
+.nav-item > a:hover {    
+    color: rgb(0, 92, 13);   
+}
+
+.container {
+    padding: 0px !important;
+}
+
+.container-fluid {
+    padding: 0px !important;
+}
+
+.dropdown-menu {
+    padding: 0;
+    border-radius: 0;
+    left: 0;
+    right: 0;
+    margin-top: 26px;
+    width: 220px;
+    border: none;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+
+ .dropdown-menu > a:hover {
+    color: rgb(4, 155, 25);
+}
+
+ #composting {
+     height: 400px;
+     background-color: #97c45b;
+ }
+
+blockquote.large {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.1em;
+    color: #fff
+}
