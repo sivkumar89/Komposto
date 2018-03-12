@@ -1,22 +1,238 @@
 ﻿@{
     ViewBag.Title = "Komposto";
+    Layout = "../Shared/_MainLayout.cshtml";
 }
 
- <header class="tomato-plant">
+@*<header class="tomato-plant">
+        <div class="bottom-left">
+            You have to do only one thing. Just collect your kitchen wastes on a daily basis that’s it you are done
+        </div>
+    </header>*@
 
- </header>
+<section id="intro">
+    <div class="intro-container">
+        <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
 
+            <ol class="carousel-indicators">
+                <li data-target="#introCarousel" data-slide-to="0" class=""></li>
+                <li data-target="#introCarousel" data-slide-to="1" class="active"></li>
+                <li data-target="#introCarousel" data-slide-to="2" class=""></li>
+                <li data-target="#introCarousel" data-slide-to="3" class=""></li>
+                <li data-target="#introCarousel" data-slide-to="4" class=""></li>
+                <li data-target="#introCarousel" data-slide-to="5" class=""></li>
+            </ol>
 
-<section id="composting">
+            <div class="carousel-inner" role="listbox">
+
+                <div class="carousel-item" style="background-image: url('./Content/images/kitchen-waste.png');">
+                    <div class="carousel-container">
+                        <div class="carousel-content">
+                            <h2>Dont't waste your kitchen waste</h2>
+                            <p>Only biodegradable wastes are allowed. For example bread, beans, grains, egg shells, tea bags, vegetable and fruit waste.</p>
+                            <a href="#featured-services" class="btn-get-started scrollto">Let's Komposto</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item" style="background-image: url('../../Content/images/compost-1.jpg');">
+                    <div class="carousel-container">
+                        <div class="carousel-content">
+                            <h2>Convert waste to compost</h2>
+                            <p>We are collecting compost from your kitchen. Compost will be used for gardening and agriculture</p>
+                            <a href="#featured-services" class="btn-get-started scrollto">Let's Komposto</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item active" style="background-image: url('../../Content/images/earth-worms.jpeg');">
+                    <div class="carousel-container">
+                        <div class="carousel-content">
+                            <h2>Earth worms</h2>
+                            <p>By their activity in the soil, earthworms offer many benefits: increased nutrient availability, better drainage, and a more stable soil structure, all of which help improve farm productivity. </p>
+                            <a href="#featured-services" class="btn-get-started scrollto">Let's Komposto</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item" style="background-image: url('../../Content/images/tomato-4.jpg');">
+                    <div class="carousel-container">
+                        <div class="carousel-content">
+                            <h2>Waste to Vegetables</h2>
+                            <p>If you don’t like to take money then we will provide organic vegetable plants. So you can cultivate your own vegetables at your balcony.</p>
+                            <a href="#featured-services" class="btn-get-started scrollto">Let's Komposto</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item" style="background-image: url('../../Content/images/chilli-2.jpg');">
+                    <div class="carousel-container">
+                        <div class="carousel-content">
+                            <h2>Healthy Organic Vegetables</h2>
+                            <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum.</p>
+                            <a href="#featured-services" class="btn-get-started scrollto">Let's Komposto</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item" style="background-image: url('../../Content/images/organic-vegetables.jpg');">
+                    <div class="carousel-container">
+                        <div class="carousel-content">
+                            <h2>We will provide Vegetables</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <a href="#featured-services" class="btn-get-started scrollto">Let's Komposto</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon ion-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+
+            <a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon ion-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+
+        </div>
+    </div>
+</section>
+
+<!--How it works-->
+<section id="how-it-works">
+    <div class="container">
+        <h2>Here's how it works</h2>
+        <div class="row">
+            <div class="how-it-works col-12 col-sm-3 col-md-3 col-lg-3">
+                <div class="how-it-works__step  how-it-works__step--1">
+                    <i class="fa fa-user-plus fa-5x"></i>
+                    <p class="step__counter">1</p>
+                    <p class="step__heading">Signup with Komposto</p>
+                    <p>
+                        Once you sign-up, you can get your compost bin based on your family size
+                    </p>
+                </div>
+            </div>
+            <div class="how-it-works col-12 col-sm-3 col-md-3 col-lg-3">
+                <div class="how-it-works__step  how-it-works__step--2">
+                    <i class="fa fa-trash-o fa-5x"></i>
+                    <p class="step__counter">2</p>
+                    <p class="step__heading">Store your kitchen waste</p>
+                    <p>
+                        Once you get your compost bin, you can start collecting kitchen waste on daily basis
+                    </p>
+                </div>
+            </div>
+            <div class="how-it-works col-12 col-sm-3 col-md-3 col-lg-3">
+                <div class="how-it-works__step  how-it-works__step--3">
+                    <i class="fa fa-bullhorn fa-5x"></i>
+                    <p class="step__counter">3</p>
+                    <p class="step__heading">Request for collection</p>
+                    <p>
+                        Once your compost bin is full, you can request to collect it our representatives will reach your door step.
+                    </p>
+                </div>
+            </div>
+            <div class="how-it-works col-12 col-sm-3 col-md-3 col-lg-3">
+                <div class="how-it-works__step  how-it-works__step--2">
+                    <i class="fa fa-money fa-5x"></i>
+                    <p class="step__counter">4</p>
+                    <p class="step__heading">Collect your cash</p>
+                    <p>
+                        Our representatives will give you money based on the quantity of waste collected
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="solid-waste">
     <div class="container">
         <div class="row">
-            <div class="col-6 alignright flyLeft animated fadeInLeftBig">
+            <div class="col-12 col-sm-6 col-md-8 col-lg-6 text-right">
                 <blockquote class="large">
-                    Don't waste your waste instead try to make money out of it <cite>Siva Kumar, Komposto</cite>
+                    Our city generates close to  3,500 tonnes of garbage on a daily basis. In which almost 70% waste can be reused.
+                    <cite> Chennai Corporation, Tamilnadu</cite>
                 </blockquote>
             </div>
-            <div class="col-6 aligncenter flyRight animated fadeInRightBig">
-                <i class="fa fa-coffee fa-5x"></i>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-6 text-center">
+                <i class="fa fa-refresh fa-9x"></i>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="segregate-section">
+    <div class="container">
+        <h2 class="text-center">Why we have to segregate our wastes ?</h2>
+        <div class="row">
+            <div class="col-12 col-sm-8 col-md-8 col-lg-8">
+                <div class="col-12">
+                    <h1 class="box-header text-info">Do you know what happens to your waste ?</h1>
+                    <p class="text-justify">
+                        Nothing. Chennai has two dumping yards – Kodungaiyur and Perungudi.
+                        Ideally these dumping yards must receive the waste segregated between degradable material, debris and plastic waste.
+                        But the corporation as made no move to do this.
+                        So the waste we produce on daily basis just sits in these two dumping yards and does nothing apart from catching fire on a regular basis.
+                    </p>
+                </div>
+                <div class="col-12">
+                    <h1 class="box-header text-warning">Why I should segregate when my corporation gonna mix everything together ?</h1>
+                    <p class="text-justify">
+                        If you segregate then you will sending less waste to dumping yards.
+                        Don't put the pressure on someone else to dig your trash to recover recyclable materials.
+                        People attitude should change to bring change in this society
+                    </p>
+                </div>
+                <div class="col-12">
+                    <h1 class="box-header text-success">How domestic waste must be segregated ?</h1>
+                    <p class="text-justify">
+                        The biodegradable substances can be converted to manure for farmer, the debris can be reused in construction and plastic can be recycled for roads.
+                        About 50 -70% of Indian household waste generated is organic in nature and can be used to make compost
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-sm-4 col-md-4 col-lg-4">
+                <img src="~/Content/images/segregation.png" class="img-fluid" />
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="compost-benefits-section">
+    <div class="container">
+        <h2 class="text-center">How I am helping the environment ?</h2>
+        <div class="row">
+            <div class="col-12 col-sm-8 col-md-8 col-lg-8">
+                <div class="col-12">
+                    <h1 class="box-header text-danger">How does composting help the environment ?</h1>
+                    <p class="text-justify">
+                       Composting decreases the greenhouse gas, methane (CH<sub>4</sub>).
+                       Methane over the course of 20 years, 72 times  more potent than CO<sub>2</sub>.
+                       Landfills are the largest human-made contributor of methane into the atmosphere.
+                       So the best way to help methane emission is to compost.
+                    </p>
+                </div>
+                <div class="col-12">
+                    <h1 class="box-header text-primary">Do I need to have PhD to do composting ?</h1>
+                    <p class="text-justify">
+                        Composting is a kid's play anyone can do it. Only thing which you have to take care is segregating the organic waste from non-organic waste.
+                    </p>
+                </div>
+                <div class="col-12">
+                    <h1 class="box-header text-success">What are the other benefits of composting ?</h1>
+                    <p class="text-justify">
+                        Making it at home reduces your guilt (waste) by 60% and you directly participate in reducing global warming.
+                        Composting is the natural way of recycling kitchen waste and compost replaces the reliance on petrochemical fertilizers in farm lands.
+
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-sm-4 col-md-4 col-lg-4">
+                <img src="~/Content/images/recycle-process.png" class="img-fluid" />
             </div>
         </div>
     </div>

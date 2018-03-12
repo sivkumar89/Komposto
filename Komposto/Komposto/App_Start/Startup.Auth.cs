@@ -30,9 +30,12 @@ namespace Komposto
                 {
                     // Enables the application to validate the security stamp when the user logs in.
                     // This is a security feature which is used when you change a password or add an external login to your account.  
-                    OnValidateIdentity = SecurityStampValidator.OnValidateIdentity<ApplicationUserManager, ApplicationUser>(
+                    OnValidateIdentity = SecurityStampValidator
+                        .OnValidateIdentity<ApplicationUserManager, ApplicationUser, int>(
                         validateInterval: TimeSpan.FromMinutes(30),
-                        regenerateIdentity: (manager, user) => user.GenerateUserIdentityAsync(manager))
+                        regenerateIdentityCallback: (manager, user) =>
+                        user.GenerateUserIdentityAsync(manager),
+                        getUserIdCallback: (id) => (id.GetUserId<int>()))
                 }
             });            
             app.UseExternalSignInCookie(DefaultAuthenticationTypes.ExternalCookie);
@@ -50,19 +53,21 @@ namespace Komposto
             //    clientId: "",
             //    clientSecret: "");
 
-            //app.UseTwitterAuthentication(
-            //   consumerKey: "",
-            //   consumerSecret: "");
+            app.UseTwitterAuthentication(
+               consumerKey: "EvUBh7anGrx8M0PHRsNxbmMty",
+               consumerSecret: "XxSmUh2gbBCxbyZZUwF9e9FxnzvKtMVUvtEVWn8mflJ8KUFbCq"
+               );
 
-            //app.UseFacebookAuthentication(
-            //   appId: "",
-            //   appSecret: "");
+            app.UseFacebookAuthentication(
+               appId: "2007884052833752",
+               appSecret: "89adbbfde1b773797ef1953d38d138c4"
+               );
 
-            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            //{
-            //    ClientId = "",
-            //    ClientSecret = ""
-            //});
+            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            {
+                ClientId = "510725090529-a68h6htiih5pbaaio1ut5f2nh9orjqsu.apps.googleusercontent.com",
+                ClientSecret = "gpouD_axn0ASlMqkn8LKDakM"
+            });
         }
     }
 }

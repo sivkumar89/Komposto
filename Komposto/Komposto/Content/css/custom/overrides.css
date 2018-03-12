@@ -1,0 +1,102 @@
+﻿body {
+    padding-bottom: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /*overflow-x:hidden;*/
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin: 30px 30px;
+    color: #190f27;
+    line-height: 1.4;
+}
+
+/* Override bootstrap styles */
+.navbar {
+    padding: 15px;
+    border-bottom: 2px solid rgb(4, 155, 25);  
+    background-color: #fff;  
+    box-shadow: 0 3px 10px rgb(0, 159, 22) !important;
+}
+
+.nav-item > a{
+    color: #5ea302;
+    font-size: 18px;    
+    font-weight:600
+}
+
+.nav-item > a:hover {    
+    color: rgb(0, 92, 13);   
+}
+
+.container {
+    padding: 0 !important;
+}
+
+.container-fluid {
+    padding: 0 !important;
+}
+
+.modal-backdrop {
+    display: none;
+}
+
+.dropdown-menu {
+    padding: 0;
+    border-radius: 0;
+    left: 0;
+    right: 0;
+    margin-top: 26px;
+    width: 220px;
+    border: none;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+
+.dropdown-toggle::after {
+    display:none
+}
+
+.dropdown:hover >.dropdown-menu { 
+    display: block;
+}
+
+.dropdown-menu > a {
+    color: #5ea302;
+}
+
+.dropdown-menu > a:hover {
+    background-color: #5ea302;
+    color: #fff;
+}
+
+blockquote {
+    font-size: 18px;
+    border: none;
+    padding: 0;
+    margin: 0 0 20px;
+}
+
+blockquote cite {
+    color: #555;
+    display: block;
+    font-size: 12px;
+}
+
+blockquote cite:before {
+    content: "\2014 \0020";
+}
